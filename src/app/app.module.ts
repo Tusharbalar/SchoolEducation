@@ -14,6 +14,8 @@ import { JoinRenew } from '../pages/join-renew/joinRenew';
 import { Contact } from '../pages/contact/contact';
 import { Interns } from '../pages/interns/interns';
 
+import { CustomNavbar } from '../custom-component/navbar.component';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,7 +30,8 @@ import { Interns } from '../pages/interns/interns';
     LearningForwardIndia,
     JoinRenew,
     Contact,
-    Interns
+    Interns,
+    CustomNavbar
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -47,7 +50,8 @@ import { Interns } from '../pages/interns/interns';
     LearningForwardIndia,
     JoinRenew,
     Contact,
-    Interns
+    Interns,
+    CustomNavbar
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

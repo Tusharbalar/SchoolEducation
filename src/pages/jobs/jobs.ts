@@ -6,7 +6,10 @@ import { NavController } from 'ionic-angular';
   selector: 'jobs',
   templateUrl: 'jobs.html'
 })
+
 export class Jobs {
+
+  public title: string = "Schools & Clients";
 
   constructor(public navCtrl: NavController) {
 

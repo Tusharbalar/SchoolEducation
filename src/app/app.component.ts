@@ -34,7 +34,7 @@ export class MyApp {
       { title: 'Our Services', component: OurServices, icon: 'ios-sad-outline' },
       { title: 'My Good School', component: MyGoodSchool, icon: 'ios-bulb-outline' },
       { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-calendar-outline' },
-      { title: 'School & Clients', component: SchoolAndClients, icon: 'ios-thumbs-up-outline' },
+      { title: 'Schools & Clients', component: SchoolAndClients, icon: 'ios-thumbs-up-outline' },
       { title: 'Jobs', component: Jobs, icon: 'ios-stats-outline' },
       { title: 'Interns', component: Interns, icon: 'ios-stats-outline' },
       { title: 'Learning Forward India', component: LearningForwardIndia, icon: 'ios-analytics-outline' },

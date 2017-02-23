@@ -6,7 +6,10 @@ import { NavController } from 'ionic-angular';
   selector: 'joinRenew',
   templateUrl: 'joinRenew.html'
 })
+
 export class JoinRenew {
+
+  public title: string = "Schools & Clients";
 
   constructor(public navCtrl: NavController) {
 
