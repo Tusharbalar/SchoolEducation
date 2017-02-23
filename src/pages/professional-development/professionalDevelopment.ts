@@ -9,7 +9,7 @@ import { NavController } from 'ionic-angular';
 
 export class ProfessionalDevelopment {
 
-  public title: string = "Schools & Clients";
+  public title: string = "Professional Development";
 
   constructor(public navCtrl: NavController) {
 

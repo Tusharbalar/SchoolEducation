@@ -9,7 +9,7 @@ import { NavController } from 'ionic-angular';
 
 export class JoinRenew {
 
-  public title: string = "Schools & Clients";
+  public title: string = "Join/Renew";
 
   constructor(public navCtrl: NavController) {
 

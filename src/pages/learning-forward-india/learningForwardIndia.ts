@@ -9,8 +9,8 @@ import { NavController } from 'ionic-angular';
 
 export class LearningForwardIndia {
 
-  public title: string = "Schools & Clients";
-  
+  public title: string = "Learning Forward India";
+
   constructor(public navCtrl: NavController) {
 
   }

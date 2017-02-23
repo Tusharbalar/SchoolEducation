@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 
 export class Dashboard {
 
-  public title: string = "Schools & Clients";
+  public title: string = "Dashboard";
 
   constructor(public navCtrl: NavController) {
 
