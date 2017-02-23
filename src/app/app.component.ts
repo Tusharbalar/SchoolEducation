@@ -4,7 +4,16 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
-
+import { Dashboard } from '../pages/dashboard/dashboard';
+import { OurServices } from '../pages/our-services/ourServices';
+import { MyGoodSchool } from '../pages/my-good-school/myGoodSchool';
+import { ProfessionalDevelopment } from '../pages/professional-development/professionalDevelopment';
+import { SchoolAndClients } from '../pages/school-and-clients/schoolAndClients';
+import { Jobs } from '../pages/jobs/jobs';
+import { LearningForwardIndia } from '../pages/learning-forward-india/learningForwardIndia';
+import { JoinRenew } from '../pages/join-renew/joinRenew';
+import { Contact } from '../pages/contact/contact';
+import { Interns } from '../pages/interns/interns';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,17 +21,25 @@ import { Page2 } from '../pages/page2/page2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = Dashboard;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Page One', component: Page1 },
-      { title: 'Page Two', component: Page2 }
+      { title: 'Dashboard', component: Dashboard, icon: 'ios-home-outline' },
+      { title: 'Our Services', component: OurServices, icon: 'ios-sad-outline' },
+      { title: 'My Good School', component: MyGoodSchool, icon: 'ios-bulb-outline' },
+      { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-calendar-outline' },
+      { title: 'School & Clients', component: SchoolAndClients, icon: 'ios-thumbs-up-outline' },
+      { title: 'Jobs', component: Jobs, icon: 'ios-stats-outline' },
+      { title: 'Interns', component: Interns, icon: 'ios-stats-outline' },
+      { title: 'Learning Forward India', component: LearningForwardIndia, icon: 'ios-analytics-outline' },
+      { title: 'Join/Renew', component: JoinRenew , icon: 'ios-paper-outline' },
+      { title: 'Contact', component: Contact, icon: 'ios-book-outline' }
     ];
 
   }
