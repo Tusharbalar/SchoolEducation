@@ -2,9 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
-import { Dashboard } from '../pages/dashboard/dashboard';
+import { Home } from '../pages/home/home';
 import { OurServices } from '../pages/our-services/ourServices';
 import { MyGoodSchool } from '../pages/my-good-school/myGoodSchool';
 import { ProfessionalDevelopment } from '../pages/professional-development/professionalDevelopment';
@@ -18,19 +16,22 @@ import { Interns } from '../pages/interns/interns';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
+
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Dashboard;
+  rootPage: any = Home;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform) {
+
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Dashboard', component: Dashboard, icon: 'ios-home-outline' },
+      { title: 'Home', component: Home, icon: 'ios-home-outline' },
       { title: 'Our Services', component: OurServices, icon: 'ios-sad-outline' },
       { title: 'My Good School', component: MyGoodSchool, icon: 'ios-bulb-outline' },
       { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-calendar-outline' },

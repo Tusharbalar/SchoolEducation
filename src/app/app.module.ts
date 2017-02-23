@@ -1,9 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
-import { Dashboard } from '../pages/dashboard/dashboard';
+import { Home } from '../pages/home/home';
 import { OurServices } from '../pages/our-services/ourServices';
 import { MyGoodSchool } from '../pages/my-good-school/myGoodSchool';
 import { ProfessionalDevelopment } from '../pages/professional-development/professionalDevelopment';
@@ -16,12 +14,13 @@ import { Interns } from '../pages/interns/interns';
 
 import { CustomNavbar } from '../custom-component/navbar.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { firebaseConfig } from '../custom-component/firebase.config.ts';
+
 @NgModule({
   declarations: [
     MyApp,
-    Page1,
-    Page2,
-    Dashboard,
+    Home,
     OurServices,
     MyGoodSchool,
     ProfessionalDevelopment,
@@ -34,14 +33,13 @@ import { CustomNavbar } from '../custom-component/navbar.component';
     CustomNavbar
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page1,
-    Page2,
-    Dashboard,
+    Home,
     OurServices,
     MyGoodSchool,
     ProfessionalDevelopment,
