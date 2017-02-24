@@ -1,11 +1,10 @@
 <ion-header class="complaints">
-  <nl-navbar [title]="title"></nl-navbar>
+  <nl-navbar [title]="headreTitle"></nl-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ul>
-    <li *ngFor="let item of items | async">
-      {{item.$value}}
-    </li>
-  </ul>
+  <b>{{title}}</b>
+    <p>
+    {{data}}
+  </p>
 </ion-content>

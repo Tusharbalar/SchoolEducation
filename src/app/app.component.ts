@@ -12,6 +12,7 @@ import { LearningForwardIndia } from '../pages/learning-forward-india/learningFo
 import { JoinRenew } from '../pages/join-renew/joinRenew';
 import { Contact } from '../pages/contact/contact';
 import { Interns } from '../pages/interns/interns';
+import { AppService } from '../service/app.service';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,9 +26,11 @@ export class MyApp {
 
   pages: Array<{title: string, component: any, icon: any}>;
 
-  constructor(public platform: Platform) {
+  constructor(public platform: Platform,
+              public appService: AppService) {
 
     this.initializeApp();
+    this.appService.getAllData();
 
     // used for an example of ngFor and navigation
     this.pages = [

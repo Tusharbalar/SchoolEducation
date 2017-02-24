@@ -17,6 +17,8 @@ import { CustomNavbar } from '../custom-component/navbar.component';
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../custom-component/firebase.config.ts';
 
+import { AppService } from '../service/app.service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -51,6 +53,6 @@ import { firebaseConfig } from '../custom-component/firebase.config.ts';
     Interns,
     CustomNavbar
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AppService]
 })
 export class AppModule {}
