@@ -16,6 +16,7 @@ export class AppService {
       let allData = JSON.stringify(snapshot.val());
       localStorage.setItem("home", JSON.stringify(snapshot.val().home));
       localStorage.setItem("service", JSON.stringify(snapshot.val().service));
+      localStorage.setItem("myGoodSchool", JSON.stringify(snapshot.val().myGoodSchool));
     });
   }
 

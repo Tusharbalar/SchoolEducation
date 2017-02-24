@@ -6,7 +6,29 @@
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/SFandhZBdIg" frameborder="0" allowfullscreen></iframe>
   </div>
-  <h3>
-    {{ourService}}
-  </h3>
+  <p> {{ourService}} </p>
+  <br/>
+  <b>{{heading}}</b>
+  <ion-slides pager loop="true" autoplay="true" speed="100">
+    <ion-slide style="background-color: lightyellow;">
+      <div>
+        {{list[0]}}
+      </div>
+    </ion-slide>
+    <ion-slide style="background-color: #a6e5d0;">
+      <div>
+        {{list[1]}}
+      </div>
+    </ion-slide>
+    <ion-slide style="background-color: #c6c8d1;">
+      <div>
+        {{list[2]}}
+      </div>
+    </ion-slide>
+    <ion-slide style="background-color: #fcd2ff;">
+      <div>
+        {{list[3]}}
+      </div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
