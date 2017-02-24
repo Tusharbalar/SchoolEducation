@@ -2,33 +2,38 @@
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/SFandhZBdIg" frameborder="0" allowfullscreen></iframe>
+<ion-content>
+  <div padding>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/SFandhZBdIg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p> {{ourService}} </p>
+    <br/>
   </div>
-  <p> {{ourService}} </p>
-  <br/>
-  <b>{{heading}}</b>
-  <ion-slides pager loop="true" autoplay="true" speed="100">
-    <ion-slide style="background-color: lightyellow;">
-      <div>
-        {{list[0]}}
-      </div>
-    </ion-slide>
-    <ion-slide style="background-color: #a6e5d0;">
-      <div>
-        {{list[1]}}
-      </div>
-    </ion-slide>
-    <ion-slide style="background-color: #c6c8d1;">
-      <div>
-        {{list[2]}}
-      </div>
-    </ion-slide>
-    <ion-slide style="background-color: #fcd2ff;">
-      <div>
-        {{list[3]}}
-      </div>
-    </ion-slide>
-  </ion-slides>
+  <!-- <b>{{heading}}</b> -->
+  <div>
+    <ion-slides pager loop="true" no-padding autoplay="true" speed="100" style="height:inherit;background: rgba(99, 188, 228, 0.4);">
+      <ion-slide>
+        <div class="slide-font-size">
+          {{list[0]}}
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide-font-size">
+          {{list[1]}}
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide-font-size">
+          {{list[2]}}
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide-font-size">
+          {{list[3]}}
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>
