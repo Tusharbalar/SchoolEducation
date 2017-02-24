@@ -19,6 +19,7 @@ export class Home implements OnInit {
   constructor(public navCtrl: NavController,
               public appService: AppService,
               private af: AngularFire) {
+    appService.getAllData();
   }
 
   ngOnInit() {

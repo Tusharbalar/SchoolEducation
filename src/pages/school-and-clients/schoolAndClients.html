@@ -3,11 +3,10 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <h5>
+    Sandeep Dutt has been invited as guest & keynote speaker in India and Overseas:
+  </h5>
+  <div *ngFor="let ab of data" class="schoolClient">
+    {{ab}}
+  </div>
 </ion-content>

@@ -30,7 +30,6 @@ export class MyApp {
               public appService: AppService) {
 
     this.initializeApp();
-    this.appService.getAllData();
 
     // used for an example of ngFor and navigation
     this.pages = [
