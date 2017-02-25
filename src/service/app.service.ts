@@ -20,6 +20,7 @@ export class AppService {
       localStorage.setItem("myGoodSchool", JSON.stringify(snapshot.val().myGoodSchool));
       localStorage.setItem("professionalDevelopment", JSON.stringify(snapshot.val().professionalDevelopment));
       localStorage.setItem("schoolClient", JSON.stringify(snapshot.val().SchoolClient));
+      localStorage.setItem("interns", JSON.stringify(snapshot.val().interns));
     });
   }
 

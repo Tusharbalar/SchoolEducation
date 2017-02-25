@@ -3,11 +3,22 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  {{interns.data}}
+  <br/> <br/>
+  {{interns.data2}}
+
+  <p><b>Qualities / prerequisites for an Adult Volunteer/ Intern</b></p>
+  <ul>
+    <li *ngFor="let a of list">
+      {{a}}
+    </li>
+  </ul>
 
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+    <b>
+      Interns management policy
+    </b>
+    <br/><br/>
+    {{interns.data3}}
   </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
