@@ -15,7 +15,7 @@ export class OurServices implements OnInit {
   public list;
 
   constructor(public navCtrl: NavController) {
-    
+
   }
 
   ngOnInit() {
