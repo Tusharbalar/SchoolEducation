@@ -2,12 +2,14 @@
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h5>
-    Sandeep Dutt has been invited as guest & keynote speaker in India and Overseas:
-  </h5>
-  <div *ngFor="let ab of data" class="schoolClient">
-    {{ab}}
+<ion-content>
+  <div padding>
+    <h5>
+      Sandeep Dutt has been invited as guest & keynote speaker in India and Overseas:
+    </h5>
+    <div *ngFor="let ab of data" class="schoolClient">
+      {{ab}}
+    </div>
   </div>
   <ion-slides pager loop="true" no-padding autoplay="true" speed="100" style="height:inherit;background: rgba(99, 188, 228, 0.4);">
     <ion-slide>
