@@ -3,6 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
+import { Dashboard } from '../pages/dashboard/dashboard';
 import { OurServices } from '../pages/our-services/ourServices';
 import { MyGoodSchool } from '../pages/my-good-school/myGoodSchool';
 import { ProfessionalDevelopment } from '../pages/professional-development/professionalDevelopment';
@@ -22,7 +23,7 @@ export class MyApp {
 
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Home;
+  rootPage;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
@@ -34,6 +35,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: Home, icon: 'ios-home-outline' },
+      { title: 'Dashboard', component: Dashboard, icon: 'ios-home-outline' },
       { title: 'Our Services', component: OurServices, icon: 'ios-sad-outline' },
       { title: 'My Good School', component: MyGoodSchool, icon: 'ios-bulb-outline' },
       { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-calendar-outline' },
@@ -44,6 +46,12 @@ export class MyApp {
       { title: 'Join/Renew', component: JoinRenew , icon: 'ios-paper-outline' },
       { title: 'Contact', component: Contact, icon: 'ios-book-outline' }
     ];
+
+    if (localStorage.getItem("isLoggedIn")) {
+      this.rootPage = Dashboard;
+    } else {
+      this.rootPage = Home;
+    }
 
   }
 

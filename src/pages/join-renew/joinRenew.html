@@ -102,8 +102,11 @@
       <ion-label stacked>Add Your Amount</ion-label>
       <ion-input type="number"></ion-input>
     </ion-item>
+    <button ion-button icon-left (click)="goToFirstPage()">
+      <ion-icon name="md-arrow-round-back"></ion-icon> PREV
+    </button>
     <button ion-button icon-right (click)="makePayment()">
-      NEXT<ion-icon name="md-send"></ion-icon> 
+      NEXT<ion-icon name="md-arrow-round-forward"></ion-icon> 
     </button>
   </ion-list>
   <ion-list radio-group [(ngModel)]="relationship" *ngIf="page3">
@@ -143,6 +146,9 @@
         <ion-label>Phone</ion-label>
         <ion-input type="number"></ion-input>
       </ion-item>
+      <button ion-button icon-left (click)="goToSecondPage()">
+        <ion-icon name="md-arrow-round-back"></ion-icon> PREV
+      </button>
       <button ion-button icon-right (click)="donePayment()">
         PAY<ion-icon name="md-send"></ion-icon> 
       </button>
