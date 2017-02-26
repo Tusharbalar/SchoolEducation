@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Events } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
@@ -30,6 +30,7 @@ export class MyApp {
   pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform,
+              public events: Events,
               public appService: AppService) {
 
     this.initializeApp();
@@ -59,6 +60,10 @@ export class MyApp {
       this.rootPage = Home;
       this.showDashboard = false;
     }
+
+    this.events.subscribe("isLoggedIn", ()=> {
+      this.showDashboard = true;
+    });
 
   }
 
