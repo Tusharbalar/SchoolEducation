@@ -24,6 +24,8 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage;
+  dashboard;
+  showDashboard: boolean = false;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
@@ -35,7 +37,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: Home, icon: 'ios-home-outline' },
-      { title: 'Dashboard', component: Dashboard, icon: 'ios-home-outline' },
       { title: 'Our Services', component: OurServices, icon: 'ios-sad-outline' },
       { title: 'My Good School', component: MyGoodSchool, icon: 'ios-bulb-outline' },
       { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-calendar-outline' },
@@ -47,10 +48,16 @@ export class MyApp {
       { title: 'Contact', component: Contact, icon: 'ios-book-outline' }
     ];
 
+    this.dashboard = [
+      { title: 'Dashboard', component: Dashboard, icon: 'ios-contact-outline' }
+    ];
+
     if (localStorage.getItem("isLoggedIn")) {
       this.rootPage = Dashboard;
+      this.showDashboard = true;
     } else {
       this.rootPage = Home;
+      this.showDashboard = false;
     }
 
   }

@@ -7,6 +7,9 @@
 
   <ion-content>
     <ion-list>
+      <button ion-item menuClose [class.csSelected]="selectedPage == p.title" *ngFor="let p of dashboard" (click)="openPage(p)" [disabled]="!showDashboard">
+        {{p.title}}
+      </button>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>

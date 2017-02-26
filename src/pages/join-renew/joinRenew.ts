@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { NavController, ActionSheetController, LoadingController } from 'ionic-angular';
+import { NavController, ActionSheetController, LoadingController,App } from 'ionic-angular';
+import { Dashboard } from '../dashboard/dashboard';
 
 @Component({
   selector: 'joinRenew',
@@ -17,6 +18,7 @@ export class JoinRenew {
 
   constructor(public navCtrl: NavController,
               public loadingCtrl: LoadingController,
+              public appCtrl: App,
               public actionSheetCtrl: ActionSheetController) {
 
   }
@@ -82,6 +84,7 @@ export class JoinRenew {
   setTimeout(() => {
     loading.dismiss();
     localStorage.setItem("isLoggedIn", "yes");
+    this.appCtrl.getRootNav().setRoot(Dashboard);
   }, 5000);
 }
 
