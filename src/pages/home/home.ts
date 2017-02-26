@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, App } from 'ionic-angular';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { initializeApp, database } from 'firebase';
 import { AppService } from '../../service/app.service';
+import { JoinRenew } from '../join-renew/joinRenew';
 
 @Component({
   selector: 'home',
@@ -18,6 +19,7 @@ export class Home implements OnInit {
 
   constructor(public navCtrl: NavController,
               public appService: AppService,
+              public appCtrl: App,
               private af: AngularFire) {
     appService.getAllData();
   }
@@ -30,6 +32,10 @@ export class Home implements OnInit {
 
   aa(data) {
     console.log("DSADSAD", data)
+  }
+
+  openJoinRenew() {
+    this.appCtrl.getRootNav().setRoot(JoinRenew);
   }
 
 }
