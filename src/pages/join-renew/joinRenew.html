@@ -7,7 +7,7 @@
   <p>
     Learning Forward India (LFIN) is an affiliate of Learning Forward (LF), membership is open to any person interested in professional growth and organisational development.
   </p>
-  <ion-list>
+  <ion-list *ngIf="page1">
     <ion-item style="padding-left:0px">
       <ion-label stacked>Firstname *</ion-label>
       <ion-input type="text" placeholder="Your answer"></ion-input>
@@ -74,6 +74,33 @@
     <ion-item style="padding-left:0px">
       <ion-label stacked>Facebook Page, kindly give the URL</ion-label>
       <ion-input type="text" placeholder="Your answer"></ion-input>
+    </ion-item>
+    <button ion-button icon-right (click)="onSubmit()">
+      SUBMIT & PAYMENT<ion-icon name="md-send"></ion-icon> 
+    </button>
+  </ion-list>
+  <ion-list *ngIf="page2">
+    <ion-list-header>
+      You are paying for
+    </ion-list-header>
+    <ion-item style="padding-left:0px">
+      <ion-label stacked>Email *</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item style="padding-left:0px">
+      <ion-label stacked>Phone *</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item style="padding-left:0px">
+      <ion-label stacked>Name *</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-list-header>
+      Payment Description
+    </ion-list-header>
+    <ion-item style="padding-left:0px">
+      <ion-label stacked>Add Ypur Amount</ion-label>
+      <ion-input type="text"></ion-input>
     </ion-item>
   </ion-list>
 </ion-content>
