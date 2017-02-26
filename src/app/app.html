@@ -8,6 +8,7 @@
   <ion-content class="csDashboardBack">
     <ion-list>
       <button ion-item menuClose [class.csSelected]="selectedPage == p.title" *ngFor="let p of dashboard" (click)="openPage(p)" [disabled]="!showDashboard">
+        <ion-icon name="ios-easel-outline" item-left></ion-icon>
         {{p.title}}
       </button>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" [class.csSelected]="selectedPage == p.title">

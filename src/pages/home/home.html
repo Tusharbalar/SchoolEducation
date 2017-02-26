@@ -1,11 +1,18 @@
 <ion-header class="complaints">
   <nl-navbar [title]="headreTitle"></nl-navbar>
+  <div class="csPrimaryBackground" style="width:100%;height:120px;text-align:center;color:white; border-top: 3px solid white;">
+<span style="font-size:1.2rem">An Affiliate of Learning Forward</span><br>
+<h2 style="font-size:7vw;margin-bottom:1.8rem">StudentEducation.com</h2>
+<b>Helping Schools Deliver Better</b>
+</div>
 </ion-header>
+
 
 <ion-content class="csGrayBackground">
 
+
   <ion-card>
-  <img class="logo" src="https://3.bp.blogspot.com/-vXrbzABEnmU/WK5tvmFci6I/AAAAAAABD_8/3luvMAc-yQQduxQQf8T1lHpVCSCXS5GKQCLcB/s1600/MyGoodSchool-very%2Bsmall.jpg"/>
+  <img class="logo" src="../assets/images/logo.jpg"/>
   <ion-card-content>
     <ion-card-title>
       {{title}}
@@ -16,5 +23,8 @@
   </ion-card-content>
   </ion-card>
 
-  <img src="http://4.bp.blogspot.com/-u5wvMzii_bs/WK7q2O9r3uI/AAAAAAABEDg/KBnl20qXKW8Ha3BlBfFfvrrJlEBAWrnFwCK4B/s275/Membership%2BLF%2BADVT.png" (click)="openJoinRenew()"/>
+<ion-card>
+  <img src="../assets/images/join.png" style="width:100%" (click)="openJoinRenew()"/>
+<button ion-button style="margin-bottom: 0px;" full (click)="openJoinRenew()">Join</button>
+</ion-card>
 </ion-content>

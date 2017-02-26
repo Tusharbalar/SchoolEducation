@@ -40,15 +40,15 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: Home, icon: 'ios-home-outline' },
-      { title: 'Our Services', component: OurServices, icon: 'ios-sad-outline' },
-      { title: 'My Good School', component: MyGoodSchool, icon: 'ios-bulb-outline' },
-      { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-calendar-outline' },
-      { title: 'Schools & Clients', component: SchoolAndClients, icon: 'ios-thumbs-up-outline' },
-      { title: 'Jobs', component: Jobs, icon: 'ios-stats-outline' },
-      { title: 'Interns', component: Interns, icon: 'ios-stats-outline' },
-      { title: 'Learning Forward India', component: LearningForwardIndia, icon: 'ios-analytics-outline' },
-      { title: 'Join/Renew', component: JoinRenew , icon: 'ios-paper-outline' },
-      { title: 'Contact', component: Contact, icon: 'ios-book-outline' }
+      { title: 'Our Services', component: OurServices, icon: 'ios-options-outline' },
+      { title: 'My Good School', component: MyGoodSchool, icon: 'ios-school-outline' },
+      { title: 'Professional Development', component: ProfessionalDevelopment, icon: 'ios-code-outline' },
+      { title: 'Schools & Clients', component: SchoolAndClients, icon: 'ios-people-outline' },
+      { title: 'Jobs', component: Jobs, icon: 'ios-git-network-outline' },
+      { title: 'Interns', component: Interns, icon: 'ios-attach-outline' },
+      { title: 'Learning Forward India', component: LearningForwardIndia, icon: 'ios-trending-up-outline' },
+      { title: 'Join/Renew', component: JoinRenew , icon: 'ios-add-circle-outline' },
+      { title: 'Contact', component: Contact, icon: 'ios-call-outline' }
     ];
 
     this.dashboard = [
