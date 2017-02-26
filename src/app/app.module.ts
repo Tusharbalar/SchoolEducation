@@ -13,6 +13,11 @@ import { JoinRenew } from '../pages/join-renew/joinRenew';
 import { Contact } from '../pages/contact/contact';
 import { Interns } from '../pages/interns/interns';
 
+import { Account } from '../pages/dashboard/account/account';
+import { AllRequest } from '../pages/dashboard/allRequest/allRequest';
+import { NewRequest } from '../pages/dashboard/newRequest/newRequest';
+
+import { ModalNavbarComponent } from '../custom-component/modal.navabar.component';
 import { CustomNavbar } from '../custom-component/navbar.component';
 
 import { AngularFireModule } from 'angularfire2';
@@ -34,7 +39,11 @@ import { AppService } from '../service/app.service';
     Contact,
     Interns,
     CustomNavbar,
-    Dashboard
+    Dashboard,
+    Account,
+    AllRequest,
+    NewRequest,
+    ModalNavbarComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -54,7 +63,11 @@ import { AppService } from '../service/app.service';
     Contact,
     Interns,
     CustomNavbar,
-    Dashboard
+    Dashboard,
+    Account,
+    AllRequest,
+    NewRequest,
+    ModalNavbarComponent
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AppService]
 })

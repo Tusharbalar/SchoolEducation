@@ -3,8 +3,13 @@
 </ion-header>
 
 <ion-content padding>
-  <b>{{title}}</b>
-    <p>
-    {{data}}
-  </p>
+  <button ion-button icon-left (click)="allRequest()">
+    <ion-icon name="md-arrow-round-back"></ion-icon> All Requests
+  </button>
+  <button ion-button icon-left (click)="newRequest()">
+    <ion-icon name="md-arrow-round-back"></ion-icon> New Request
+  </button>
+  <button ion-button icon-left (click)="account()">
+    <ion-icon name="md-arrow-round-back"></ion-icon> Account
+  </button>
 </ion-content>

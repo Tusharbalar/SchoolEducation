@@ -22,5 +22,17 @@ export class Dashboard {
     
   }
 
+  allRequest() {
+    
+  }
+
+  newRequest() {
+
+  }
+
+  account() {
+
+  }
+
 
 }
