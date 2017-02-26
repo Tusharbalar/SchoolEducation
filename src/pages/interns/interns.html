@@ -1,24 +1,30 @@
 <ion-header class="complaints">
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
-
-<ion-content padding>
-  {{interns.data}}
-  <br/> <br/>
-  {{interns.data2}}
-
-  <p><b>Qualities / prerequisites for an Adult Volunteer/ Intern</b></p>
-  <ul>
-    <li *ngFor="let a of list">
-      {{a}}
-    </li>
-  </ul>
-
-  <p>
-    <b>
+<ion-content class="csGrayBackground">
+  <div padding>
+    <p>{{interns.data}}
+    <br/> <br/> {{interns.data2}}
+    </p>
+  </div>
+  <ion-card>
+    <ion-card-header text-wrap>
+      Qualities / prerequisites for an Adult Volunteer/ Intern
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item text-nowrap *ngFor="let a of list">
+          {{a}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header text-wrap>
       Interns management policy
-    </b>
-    <br/><br/>
-    {{interns.data3}}
-  </p>
+    </ion-card-header>
+    <ion-card-content>
+        {{interns.data3}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -2,9 +2,17 @@
   <nl-navbar [title]="headreTitle"></nl-navbar>
 </ion-header>
 
-<ion-content padding>
-  <b>{{title}}</b>
+<ion-content class="csGrayBackground">
+
+  <ion-card>
+  <img class="logo" src="https://3.bp.blogspot.com/-vXrbzABEnmU/WK5tvmFci6I/AAAAAAABD_8/3luvMAc-yQQduxQQf8T1lHpVCSCXS5GKQCLcB/s1600/MyGoodSchool-very%2Bsmall.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{title}}
+      </ion-card-title>
     <p>
-    {{data}}
-  </p>
+      {{data}}
+    </p>
+  </ion-card-content>
+  </ion-card>
 </ion-content>
