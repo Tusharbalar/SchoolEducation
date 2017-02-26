@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
+import { Dashboard } from '../pages/dashboard/dashboard';
 import { OurServices } from '../pages/our-services/ourServices';
 import { MyGoodSchool } from '../pages/my-good-school/myGoodSchool';
 import { ProfessionalDevelopment } from '../pages/professional-development/professionalDevelopment';
@@ -32,7 +33,8 @@ import { AppService } from '../service/app.service';
     JoinRenew,
     Contact,
     Interns,
-    CustomNavbar
+    CustomNavbar,
+    Dashboard
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -51,7 +53,8 @@ import { AppService } from '../service/app.service';
     JoinRenew,
     Contact,
     Interns,
-    CustomNavbar
+    CustomNavbar,
+    Dashboard
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AppService]
 })
