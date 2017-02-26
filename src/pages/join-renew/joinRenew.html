@@ -76,7 +76,7 @@
       <ion-input type="text" placeholder="Your answer"></ion-input>
     </ion-item>
     <button ion-button icon-right (click)="onSubmit()">
-      SUBMIT & PAYMENT<ion-icon name="md-send"></ion-icon> 
+      MAKE PAYMENT<ion-icon name="md-send"></ion-icon> 
     </button>
   </ion-list>
   <ion-list *ngIf="page2">
@@ -99,8 +99,53 @@
       Payment Description
     </ion-list-header>
     <ion-item style="padding-left:0px">
-      <ion-label stacked>Add Ypur Amount</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label stacked>Add Your Amount</ion-label>
+      <ion-input type="number"></ion-input>
     </ion-item>
+    <button ion-button icon-right (click)="makePayment()">
+      NEXT<ion-icon name="md-send"></ion-icon> 
+    </button>
+  </ion-list>
+  <ion-list radio-group [(ngModel)]="relationship" *ngIf="page3">
+    <ion-item>
+      <ion-label>Credit/Debit Card</ion-label>
+      <ion-radio value="friends"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Netbanking</ion-label>
+      <ion-radio value="family"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>UPI</ion-label>
+      <ion-radio value="enemies"></ion-radio>
+    </ion-item>
+    <div *ngIf="relationship">
+      <ion-list-header>
+        Enter Card Details
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Card Number</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Expiry Date</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CVV</ion-label>
+        <ion-input type="number" maxlength="3"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Phone</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <button ion-button icon-right (click)="donePayment()">
+        PAY<ion-icon name="md-send"></ion-icon> 
+      </button>
+    </div>
   </ion-list>
 </ion-content>
