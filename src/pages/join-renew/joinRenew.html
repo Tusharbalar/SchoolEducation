@@ -119,11 +119,19 @@
       <ion-label stacked>Add Your Amount</ion-label>
       <ion-input type="number"></ion-input>
     </ion-item>
+<<<<<<< HEAD
   </ion-list>
 </ion-card>
 <div padding>
     <button full ion-button icon-right (click)="makePayment()">
       NEXT<ion-icon name="md-send"></ion-icon> 
+=======
+    <button ion-button icon-left (click)="goToFirstPage()">
+      <ion-icon name="md-arrow-round-back"></ion-icon> PREV
+    </button>
+    <button ion-button icon-right (click)="makePayment()">
+      NEXT<ion-icon name="md-arrow-round-forward"></ion-icon> 
+>>>>>>> e80f0315bc66fa9e114b7a169781e00ccb98115a
     </button>
 </div>
 </div>
@@ -170,7 +178,12 @@
         <ion-label>Phone:</ion-label>
         <ion-input type="number"></ion-input>
       </ion-item>
-
+      <button ion-button icon-left (click)="goToSecondPage()">
+        <ion-icon name="md-arrow-round-back"></ion-icon> PREV
+      </button>
+      <button ion-button icon-right (click)="donePayment()">
+        PAY<ion-icon name="md-send"></ion-icon> 
+      </button>
     </div>
   </ion-list>
   </ion-card>

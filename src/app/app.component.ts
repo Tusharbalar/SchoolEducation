@@ -1,8 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Events } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
+import { Dashboard } from '../pages/dashboard/dashboard';
 import { OurServices } from '../pages/our-services/ourServices';
 import { MyGoodSchool } from '../pages/my-good-school/myGoodSchool';
 import { ProfessionalDevelopment } from '../pages/professional-development/professionalDevelopment';
@@ -22,12 +23,16 @@ export class MyApp {
 
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Home;
+
   public selectedPage:string;
+  rootPage;
+  dashboard;
+  showDashboard: boolean = false;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform,
+              public events: Events,
               public appService: AppService) {
 
     this.initializeApp();
@@ -45,6 +50,22 @@ export class MyApp {
       { title: 'Join/Renew', component: JoinRenew , icon: 'ios-paper-outline' },
       { title: 'Contact', component: Contact, icon: 'ios-book-outline' }
     ];
+
+    this.dashboard = [
+      { title: 'Dashboard', component: Dashboard, icon: 'ios-contact-outline' }
+    ];
+
+    if (localStorage.getItem("isLoggedIn")) {
+      this.rootPage = Dashboard;
+      this.showDashboard = true;
+    } else {
+      this.rootPage = Home;
+      this.showDashboard = false;
+    }
+
+    this.events.subscribe("isLoggedIn", ()=> {
+      this.showDashboard = true;
+    });
 
   }
 
