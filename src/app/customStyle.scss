@@ -227,3 +227,9 @@ button{
 ion-content{
     @extend .csGrayBackground;
 }
+.csHeaderText{
+    padding: 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+}

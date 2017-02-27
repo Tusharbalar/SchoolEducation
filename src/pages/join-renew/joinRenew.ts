@@ -26,8 +26,8 @@ export class JoinRenew {
 
   onSubmit() {
     this.page1 = false;
-    this.page2 = true;
-    this.page3 = false;
+    this.page2 = false;
+    this.page3 = true;
   }
 
   makePayment() {
@@ -41,8 +41,8 @@ export class JoinRenew {
   }
 
   goToSecondPage() {
-    this.page1 = false;
-    this.page2 = true;
+    this.page1 = true;
+    this.page2 = false;
     this.page3 = false;
   }
 
