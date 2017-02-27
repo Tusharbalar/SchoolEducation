@@ -15,7 +15,7 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-@import "cornerStone.scss";
+@import "customStyle.scss";
 
 $transparent:transparent;
 $icoSize : 2.4rem;
@@ -106,13 +106,13 @@ ion-toolbar{
 }
 
 .csSelected{
-  background: #dedede;
-  color: #6d6d6d;
+  background: $color0;
+  color: white;
   font-weight: bold;
   border-left:3px solid $color1;
-  ion-icon{
-    color:$color1;
-  }
+}
+.csDashboardBack{
+  background:$csGray
 }
 
 .toolbar-ios ion-title {

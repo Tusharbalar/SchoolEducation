@@ -2,38 +2,33 @@
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
 
-<ion-content>
-  <div padding>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/SFandhZBdIg" frameborder="0" allowfullscreen></iframe>
-    </div>
-
+<ion-content class="csGrayBackground">
+<ion-card>
+  <iframe src="http://www.youtube.com/embed/SFandhZBdIg" frameborder="0" allowfullscreen style="width: 100%;height: auto;"></iframe>
+  <ion-card-content>
     <p> {{ourService}} </p>
-    <br/>
-  </div>
-  <!-- <b>{{heading}}</b> -->
-  <div>
-    <ion-slides pager loop="true" no-padding autoplay="true" speed="100" style="height:inherit;background: rgba(99, 188, 228, 0.4);">
-      <ion-slide>
+  </ion-card-content>
+</ion-card>
+    <ion-slides pager loop="true" no-padding autoplay="true" speed="100" class="our-services-slides">
+      <ion-slide class="slide1">
         <div class="slide-font-size">
           {{list[0]}}
         </div>
       </ion-slide>
-      <ion-slide>
+      <ion-slide class="slide2">
         <div class="slide-font-size">
           {{list[1]}}
         </div>
       </ion-slide>
-      <ion-slide>
+      <ion-slide class="slide3">
         <div class="slide-font-size">
           {{list[2]}}
         </div>
       </ion-slide>
-      <ion-slide>
+      <ion-slide class="slide4">
         <div class="slide-font-size">
           {{list[3]}}
         </div>
       </ion-slide>
     </ion-slides>
-  </div>
 </ion-content>

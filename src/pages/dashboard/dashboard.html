@@ -1,15 +1,37 @@
 <ion-header class="complaints">
   <nl-navbar [title]="headreTitle"></nl-navbar>
 </ion-header>
-
-<ion-content padding>
-  <button ion-button icon-left (click)="allRequest()">
-    All Requests
-  </button>
-  <button ion-button icon-left (click)="newRequest()">
-    New Request
-  </button>
-  <button ion-button icon-left (click)="account()">
-    Account
-  </button>
+<ion-content class="csGrayBackground">
+  <ion-card>
+    <img class="logo" src="../assets/images/dashboard.jpg"
+    />
+    <ion-card-content>
+      <ion-card-title color="primary">
+        SchoolEducation.com
+      </ion-card-title>
+      <p>
+        A good school should offer facilities for retraining teachers and good salaries at par with related spheres. A well-designed
+        school should have modern aids and teaching devices. A school should be a centre for excellence. The school should
+        encourage a concern for environment and cleanliness. Above all, it should be managed by a dynamic Principal and competent,
+        humane teachers.
+      </p>
+    </ion-card-content>
+    <p>
+    </p>
+    <ion-item (click)="allRequest()">
+      <ion-icon color="cool" name="create" item-left></ion-icon>
+      All Requests
+      <ion-badge item-right>2</ion-badge>
+    </ion-item>
+    <ion-item (click)="newRequest()">
+      <ion-icon color="cool" name="add-circle" item-left></ion-icon>
+      New Request
+      <ion-badge item-right>8</ion-badge>
+    </ion-item>
+    <ion-item (click)="account()">
+      <ion-icon name="person" color="cool" item-left></ion-icon>
+      Account
+      <ion-badge item-right>26</ion-badge>
+    </ion-item>
+  </ion-card>
 </ion-content>
