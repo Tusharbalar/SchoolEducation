@@ -7,7 +7,13 @@ import { JoinRenew } from '../join-renew/joinRenew';
 
 @Component({
   selector: 'home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  styles: [`
+  .logo{ 
+    width:100px;
+    margin:auto;
+ }
+  `]
 })
 
 export class Home implements OnInit {

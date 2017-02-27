@@ -2,160 +2,176 @@
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Join Our Partner Schools</h3>
+<ion-content class="csGrayBackground">
 
-  <p>
-    If you wish to work with one of our partner schools and would like us to place you, please fill this form in full.
-  </p>
+  <ion-card>
+    <ion-card-header text-wrap>
+      Join Our Partner Schools
+    </ion-card-header>
+    <ion-card-content>
+      <p>If you wish to work with one of our partner schools and would like us to place you, please fill this form in full.</p>
+    </ion-card-content>
+  </ion-card>
 
   <div *ngIf="page1">
-    <ion-list radio-group>
-      <ion-list-header style="padding-left:0px;font-size: 13px !important">
-        What kind of job are you looking for? *
-      </ion-list-header>
-      <ion-item>
-        <ion-label>Principal</ion-label>
-        <ion-radio value="Principal"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Administrator</ion-label>
-        <ion-radio value="Administrator"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Teacher</ion-label>
-        <ion-radio value="Teacher"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Other</ion-label>
-        <ion-radio value="Other"></ion-radio>
-      </ion-item>
-    </ion-list>
-    <ion-list>
-      <ion-list-header style="padding-left:0px;font-size: 13px !important">
-        I can join in: *
-        <br/>
-        <span style="font-size: 9px">
+    <ion-card>
+      <ion-list radio-group>
+        <ion-card-content>
+        <b>
+          What kind of job are you looking for? <span color="danger">*</span>
+        </b>
+        </ion-card-content>
+        <ion-item>
+          <ion-label>Principal</ion-label>
+          <ion-radio value="Principal"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Administrator</ion-label>
+          <ion-radio value="Administrator"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Teacher</ion-label>
+          <ion-radio value="Teacher"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Other</ion-label>
+          <ion-radio value="Other"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+    <ion-card>
+      <ion-list>
+        <ion-list-header>
+          I can join in: <span color="danger">*</span>
+          <br/>
+          <span style="font-size: 9px">
           Please indicate when you can take on the role
         </span>
-      </ion-list-header>
-      <ion-item>
-        <ion-label>January</ion-label>
-        <ion-checkbox></ion-checkbox>
-      </ion-item>
-      <ion-item>
-        <ion-label>April</ion-label>
-        <ion-checkbox></ion-checkbox>
-      </ion-item>
-      <ion-item>
-        <ion-label>June</ion-label>
-        <ion-checkbox></ion-checkbox>
-      </ion-item>
-      <ion-item>
-        <ion-label>September</ion-label>
-        <ion-checkbox></ion-checkbox>
-      </ion-item>
-      <ion-item>
-        <ion-label>Immediately</ion-label>
-        <ion-checkbox></ion-checkbox>
-      </ion-item>
-    </ion-list>
+        </ion-list-header>
+        <ion-item>
+          <ion-label>January</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>April</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>June</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>September</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Immediately</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-card>
     <div padding>
       <button ion-button full icon-right (click)="goToSecondPage()">NEXT <ion-icon name="md-arrow-round-forward"></ion-icon></button>
     </div>
   </div>
 
   <div *ngIf="page2">
-    <ion-list>
-      <ion-item style="padding-left:0px">
+    <ion-card>
+      <ion-item>
         <ion-label stacked>Email Address where you wish we respond to *</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Your mobile phone number *</ion-label>
+      <ion-item>
+        <ion-label stacked>Your mobile phone number <span color="danger">*</span></ion-label>
         <ion-input type="number"></ion-input>
       </ion-item>
-    </ion-list>
-    <ion-list>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>What is your educational background? * <br/>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+        <ion-label stacked>What is your educational background? <span color="danger">*</span> <br/>
           <span style="font-size: small;">
             Please give details of your educational qualifications and specialisation if any
           </span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Have you worked in a girls or a coeducational school? *<br/>
+      <ion-item>
+        <ion-label stacked>Have you worked in a girls or a coeducational school? <span color="danger">*</span><br/>
           <span style="font-size: small;">
             Kindly give years of work and what was your key role
           </span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Where are your currently working, and what is the job you are doing? *<br/>
+      <ion-item>
+        <ion-label stacked>Where are your currently working, and what is the job you are doing? <span color="danger">*</span><br/>
           <span style="font-size: small;">
             Please give name of institution, your role and since when you have been on the current job
           </span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Any experience of pastoral care? *<br/>
+      <ion-item>
+        <ion-label stacked>Any experience of pastoral care? <span color="danger">*</span><br/>
           <span style="font-size: small;">
             Worked in a residential school, day-boarding, any institution that needs working with children beyond the class room
           </span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Do you have a degree or professional qualification in English? *<br/>
+      <ion-item>
+        <ion-label stacked>Do you have a degree or professional qualification in English? <span color="danger">*</span><br/>
           <span style="font-size: small;">
             Please name your degree, specialisation in the subject and experience of teaching
           </span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
+      <ion-item>
         <ion-label stacked>Please give the website address of the school you are currently working in.
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Age as on date *</ion-label>
+      <ion-item>
+        <ion-label stacked>Age as on date <span color="danger">*</span></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Please give your Contact Address *<br/>
+      <ion-item>
+        <ion-label stacked>Please give your Contact Address <span color="danger">*</span><br/>
           <span style="font-size: small;">
             We need full mailing address
           </span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>What is the total salary you expect? *</ion-label>
+      <ion-item>
+        <ion-label stacked>What is the total salary you expect? <span color="danger">*</span></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-    </ion-list>
-    <ion-list>
-      <ion-item style="padding-left:0px">
-        <ion-label stacked>Please add your name to confirm you intent. *</ion-label>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+        <ion-label stacked>Please add your name to confirm you intent. <span color="danger">*</span></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-    </ion-list>
+    </ion-card>
     <div padding>
-      <button ion-button icon-left (click)="goToFirstPage()">
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left full (click)="goToFirstPage()">
         <ion-icon name="md-arrow-round-back"></ion-icon> PREV
       </button>
-      <button ion-button icon-right (click)="submit()">SUBMIT <ion-icon name="md-send"></ion-icon></button>
+        </ion-col>
+        <ion-col>
+          <button ion-button full icon-right (click)="submit()">SUBMIT <ion-icon name="md-send"></ion-icon></button>
+        </ion-col>
+      </ion-row>
     </div>
   </div>
 
   <div *ngIf="page3">
     <div padding>
-      <button ion-button icon-left (click)="goToSecondPage()">
+      <button ion-button full icon-left (click)="goToSecondPage()">
         <ion-icon name="md-arrow-round-back"></ion-icon> PREV
       </button>
     </div>

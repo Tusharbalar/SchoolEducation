@@ -1,36 +1,39 @@
 <ion-header class="complaints">
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
+<ion-content class="csGrayBackground" style="font-family: roboto;font-size: 16px;">
+  <ion-card>
+    <iframe src="https://www.youtube.com/embed/DvCpqRIMJe8" frameborder="0" allowfullscreen style="width: 100%;height: auto;"></iframe>
 
-<ion-content padding style="font-family: roboto;font-size: 16px;">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/DvCpqRIMJe8" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <p>
-    <b>The Learning Forward India Academy </b> {{data[0]}}
-  </p>
-  <p>
-    {{data[1]}}
-  </p>
-
-  <p>
-    <b>
-      The Three-Year Professional Development Program:
+    <ion-card-content>
+          <b>
+      The Learning Forward India Academy
     </b>
-    {{data[2]}}
-  </p>
-
-  <p>
-    <b>
-      Scores and Assessment:
+      <p> {{data[0]}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <b>
+        The Three-Year Professional Development Program
+      </b>
+      <p> {{data[2]}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <b>
+      Scores and Assessment
     </b>
-    {{data[3]}}
-  </p>
-
-  <p>
-    <b>
-      Outcome and Certification:
+      <p> {{data[3]}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <b>
+      Outcome and Certification
     </b>
-    {{data[4]}}
-  </p>
+      <p> {{data[4]}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
