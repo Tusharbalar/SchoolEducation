@@ -6,6 +6,10 @@ import { NavController, Slides } from 'ionic-angular';
   selector: 'ourServices',
   templateUrl: 'ourServices.html',
   styles: [`
+  .ourServicesMain{
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px;
+  }
   .our-services-slides{
     height:inherit;
     border-top:2px solid gray;
@@ -14,9 +18,9 @@ import { NavController, Slides } from 'ionic-angular';
     position: absolute;
   }
   ion-slide{
+      min-height: 150px !important;
       padding: 10px !important;
       color:white;
-      height:initial !important;
     }
     .swiper-pagination swiper-pagination-clickable swiper-pagination-bullets{
       bottom:0px !important;

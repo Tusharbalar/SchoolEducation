@@ -2,26 +2,25 @@
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
 <ion-content class="csGrayBackground">
-  <div padding>
+  <div padding style="background:white">
     <p>{{interns.data}}
     <br/> <br/> {{interns.data2}}
     </p>
   </div>
   <ion-card>
-
+    <ion-card-header>
+Qualities / prerequisites for an Adult Volunteer/ Intern
+    </ion-card-header>
     <ion-card-content>
-          <b>
-      Qualities / prerequisites for an Adult Volunteer/ Intern
-    </b>
       <ion-list>
-        <ion-item text-nowrap *ngFor="let a of list">
-          {{a}}
+        <ion-item *ngFor="let a of list">
+          <span>{{a}}</span>
         </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <ion-card-header text-wrap>
+    <ion-card-header>
       Interns management policy
     </ion-card-header>
     <ion-card-content>

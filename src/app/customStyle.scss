@@ -116,7 +116,7 @@ toolbar-background-md {
 }
 
 .csGrayBackground {
-    background: $csBackgroundColor;
+    background: url('../assets/svg/gBoard.svg');
 }
 .csParagraph {
     font-size: 1.4rem;
@@ -198,10 +198,6 @@ button{
     color: #fff;
     font-weight:bold;
     border-top: white solid;
-}
-
-.csPrimaryBackground{
-    background:$color1;
 }
 .csFullWidth{
     width:100%;

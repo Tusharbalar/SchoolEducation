@@ -5,7 +5,7 @@
 <ion-content class="csGrayBackground">
 
   <ion-card>
-    <ion-card-header text-wrap>
+    <ion-card-header class='ion-card-header1'>
       Join Our Partner Schools
     </ion-card-header>
     <ion-card-content>
@@ -76,17 +76,17 @@
   </div>
 
   <div *ngIf="page2">
-    <ion-card>
+    <ion-list>
       <ion-item>
-        <ion-label stacked>Email Address where you wish we respond to *</ion-label>
+        <ion-label stacked>Email Address where you wish we respond to <span color="danger">*</span></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label stacked>Your mobile phone number <span color="danger">*</span></ion-label>
         <ion-input type="number"></ion-input>
       </ion-item>
-    </ion-card>
-    <ion-card>
+    </ion-list>
+    <ion-list>
       <ion-item>
         <ion-label stacked>What is your educational background? <span color="danger">*</span> <br/>
           <span style="font-size: small;">
@@ -96,7 +96,7 @@
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Have you worked in a girls or a coeducational school? <span color="danger">*</span><br/>
+        <ion-label stacked><span>Have you worked in a girls or a coeducational school? </span><span color="danger">*</span><br/>
           <span style="font-size: small;">
             Kindly give years of work and what was your key role
           </span>
@@ -104,7 +104,7 @@
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Where are your currently working, and what is the job you are doing? <span color="danger">*</span><br/>
+        <ion-label stacked><span>Where are your currently working, and what is the job you are doing? </span><span color="danger">*</span><br/>
           <span style="font-size: small;">
             Please give name of institution, your role and since when you have been on the current job
           </span>
@@ -112,7 +112,7 @@
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Any experience of pastoral care? <span color="danger">*</span><br/>
+        <ion-label stacked><span>Any experience of pastoral care? </span><span color="danger">*</span><br/>
           <span style="font-size: small;">
             Worked in a residential school, day-boarding, any institution that needs working with children beyond the class room
           </span>
@@ -120,7 +120,7 @@
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Do you have a degree or professional qualification in English? <span color="danger">*</span><br/>
+        <ion-label stacked><span>Do you have a degree or professional qualification in English?<span color="danger">*</span></span> 
           <span style="font-size: small;">
             Please name your degree, specialisation in the subject and experience of teaching
           </span>
@@ -128,7 +128,7 @@
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Please give the website address of the school you are currently working in.
+        <ion-label stacked><span>Please give the website address of the school you are currently working in.</span>
         </ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
@@ -145,13 +145,13 @@
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>What is the total salary you expect? <span color="danger">*</span></ion-label>
+        <ion-label stacked><span>What is the total salary you expect? </span><span color="danger">*</span></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-    </ion-card>
+    </ion-list>
     <ion-card>
       <ion-item>
-        <ion-label stacked>Please add your name to confirm you intent. <span color="danger">*</span></ion-label>
+        <ion-label stacked><span>Please add your name to confirm you intent. </span><span color="danger">*</span></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
     </ion-card>

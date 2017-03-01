@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,20 +12,17 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
 @import "customStyle.scss";
-
 $transparent:transparent;
-$icoSize : 2.4rem;
-$full-width : 100%;
-$full-height : 100%;
-$errorColor : red;
-$absolute : absolute;
-$font-sm : 12px;
-$font-md : 16px;
-$font-lg : 18px;
-$inherit : inherit;
-
+$icoSize: 2.4rem;
+$full-width: 100%;
+$full-height: 100%;
+$errorColor: red;
+$absolute: absolute;
+$font-sm: 12px;
+$font-md: 16px;
+$font-lg: 18px;
+$inherit: inherit;
 // Custom Navbar Style
 .navBtnRight {
   height: 2.0em;
@@ -36,7 +31,9 @@ $inherit : inherit;
     font-size: 2em;
   }
 }
-.item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input {
+
+.item-md ion-icon[item-left]+.item-inner,
+.item-md ion-icon[item-left]+.item-input {
   margin-left: 8px;
 }
 
@@ -48,19 +45,18 @@ ion-toolbar.toolbar.toolbar-ios.toolbar-ios-primary {
   padding-top: 20px;
 }
 
-.bigIcon{
+.bigIcon {
   font-size: 120px;
-    color: #6987ac;
-    width: 103px;
-    height: 114px;
+  color: #6987ac;
+  width: 103px;
+  height: 114px;
 }
 
-
-.csBlueTheme{
+.csBlueTheme {
   color: #fff;
 }
 
-.csBlueColor{
+.csBlueColor {
   @extend .csBackground;
   background-image: csBackgroundSvg('dashBoard.svg');
   font: {
@@ -69,19 +65,19 @@ ion-toolbar.toolbar.toolbar-ios.toolbar-ios-primary {
   }
 }
 
-ion-toolbar{
-  .toolbar{
-    .toolbar-ios{
+ion-toolbar {
+  .toolbar {
+    .toolbar-ios {
       .toolbar-ios-primary {
         padding-top: 20px;
       }
     }
-    .toolbar-md{
+    .toolbar-md {
       .toolbar-md-primary {
         padding-top: 20px;
       }
     }
-    .toolbar-wp{
+    .toolbar-wp {
       .toolbar-wp-primary {
         padding-top: 20px;
       }
@@ -89,62 +85,57 @@ ion-toolbar{
   }
 }
 
+
 /* CS Theme */
-.csLightText{
-  color:#fff;
-}
-.csGrayText{
-  color:gray;
+
+.csLightText {
+  color: #fff;
 }
 
-.csStrip{
-    background:$csStripColor;
+.csGrayText {
+  color: gray;
 }
 
-.csBlueColor{
-  background:$csDarkStrip;
-}
-
-.csSelected{
-  background: $color0;
+.csSelected {
+  background: $color1;
   color: white;
   font-weight: bold;
-  border-left:3px solid $color1;
-}
-.csDashboardBack{
-  background:$csGray
+  border-right: 5px solid $color3;
 }
 
 .toolbar-ios ion-title {
   padding: 0 65px 0px !important;
 }
 
-.noBorder-item{
+.noBorder-item {
   .item-inner {
     border-bottom: 0px !important;
   }
 }
 
-
-.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default,
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default,
 .toolbar-title-md {
   color: white;
 }
 
 .video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 ion-content {
@@ -154,4 +145,60 @@ ion-content {
 
 .slide-font-size {
   font-size: 15px;
+}
+
+.csPrimaryBackground {
+  background: $color3;
+}
+
+.csCardTopBorder2 {
+  border-top: 3px solid $color2;
+}
+
+.csCardTopBorder3 {
+  border-top: 3px solid $color3;
+}
+
+.csCardTopBorder4 {
+  border-top: 3px solid $color4;
+}
+
+.csCardTopBorder5 {
+  border-top: 3px solid $color5;
+}
+
+ion-label {
+  span {
+    white-space: pre-line;
+  }
+}
+
+ion-card-header,
+ion-item {
+  white-space: pre-line;
+}
+
+.imageBackground {
+  background: url('https://4.bp.blogspot.com/-bZjQGgaFWf8/VYUhHuSeRuI/AAAAAAABoec/Ih7SDBlagwo/s0/Dark_Material_Design_wallpaper.jpg');
+}
+
+.ion-card-header1 {
+  background: $color2;
+  color: white;
+  box-shadow: 0px 0px 25px black;
+  margin-bottom: 15px;
+}
+
+.ion-card-header2 {
+  background: $color5;
+  color: white;
+  box-shadow: 0px 0px 25px black;
+  margin-bottom: 15px;
+}
+
+.ion-card-header3 {
+  background: $color4;
+  color: white;
+  box-shadow: 0px 0px 25px black;
+  margin-bottom: 15px;
 }

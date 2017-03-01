@@ -9,10 +9,13 @@ import { JoinRenew } from '../join-renew/joinRenew';
   selector: 'home',
   templateUrl: 'home.html',
   styles: [`
-  .logo{ 
-    width:100px;
-    margin:auto;
- }
+  .logo {
+    width: 100px;
+    margin: auto;
+  }
+  .homeOne{
+    border-radius: 25px !important;
+  }
   `]
 })
 
