@@ -6,10 +6,6 @@ import { NavController, Slides } from 'ionic-angular';
   selector: 'ourServices',
   templateUrl: 'ourServices.html',
   styles: [`
-  .ourServicesMain{
-    border-bottom-left-radius: 25px !important;
-    border-bottom-right-radius: 25px;
-  }
   .our-services-slides{
     height:inherit;
     border-top:2px solid gray;
@@ -56,6 +52,7 @@ export class OurServices implements OnInit {
     this.ourService = service.data;
     this.heading = service.heading;
     this.list = service.list;
+    console.log(this.list)
   }
 
 }

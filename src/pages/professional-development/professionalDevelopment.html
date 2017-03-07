@@ -6,27 +6,27 @@
     <iframe src="https://www.youtube.com/embed/DvCpqRIMJe8" frameborder="0" allowfullscreen style="box-shadow: 0px 0px 25px;width: 100%;height: auto;"></iframe>
     <ion-card-content>
           <b>
-      The Learning Forward India Academy
+      {{data[0].title}}
     </b>
-      <p> {{data[0]}}</p>
+      <p> {{data[0].data}}</p>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header class="ion-card-header1">
-        <span>The Three-Year Professional Development Program</span>
+        <span>{{data[2].title}}</span>
     </ion-card-header>
     <ion-card-content>
-      <p> {{data[2]}}</p>
+      <p>{{data[2].data}}</p>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header class="ion-card-header2">
-      Scores and Assessment
+      {{data[3].title}}
     </ion-card-header>
     <ion-card-content>
-      <p> {{data[3]}}</p>
+      <p> {{data[3].data}}</p>
     </ion-card-content>
   </ion-card>
 

@@ -13,9 +13,6 @@ import { JoinRenew } from '../join-renew/joinRenew';
     width: 100px;
     margin: auto;
   }
-  .homeOne{
-    border-radius: 25px !important;
-  }
   `]
 })
 
