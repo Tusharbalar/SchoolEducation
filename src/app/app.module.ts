@@ -12,6 +12,9 @@ import { LearningForwardIndia } from '../pages/learning-forward-india/learningFo
 import { JoinRenew } from '../pages/join-renew/joinRenew';
 import { Contact } from '../pages/contact/contact';
 import { Interns } from '../pages/interns/interns';
+import { BoardOfAdvisor } from '../pages/board-of-advisor/boardOfAdvisor';
+import { OurAssociation } from '../pages/our-association/ourAssociation';
+import { MyPartners } from '../pages/my-partners/myPartners';
 
 import { Account } from '../pages/dashboard/account/account';
 import { AllRequest } from '../pages/dashboard/allRequest/allRequest';
@@ -43,7 +46,10 @@ import { AppService } from '../service/app.service';
     Account,
     AllRequest,
     NewRequest,
-    ModalNavbarComponent
+    ModalNavbarComponent,
+    BoardOfAdvisor,
+    OurAssociation,
+    MyPartners
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -67,7 +73,10 @@ import { AppService } from '../service/app.service';
     Account,
     AllRequest,
     NewRequest,
-    ModalNavbarComponent
+    ModalNavbarComponent,
+    BoardOfAdvisor,
+    OurAssociation,
+    MyPartners
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AppService]
 })
