@@ -14,6 +14,9 @@ import { JoinRenew } from '../pages/join-renew/joinRenew';
 import { Contact } from '../pages/contact/contact';
 import { Interns } from '../pages/interns/interns';
 import { AppService } from '../service/app.service';
+import { BoardOfAdvisor } from '../pages/board-of-advisor/boardOfAdvisor';
+import { OurAssociation } from '../pages/our-association/ourAssociation';
+import { MyPartners } from '../pages/my-partners/myPartners';
 
 @Component({
   templateUrl: 'app.html'
@@ -48,7 +51,11 @@ export class MyApp {
       { title: 'Interns', component: Interns, icon: 'ios-attach-outline' },
       { title: 'Learning Forward India', component: LearningForwardIndia, icon: 'ios-trending-up-outline' },
       { title: 'Join/Renew', component: JoinRenew , icon: 'ios-add-circle-outline' },
-      { title: 'Contact', component: Contact, icon: 'ios-call-outline' }
+      { title: 'MyPartners', component: MyPartners, icon: 'ios-radio-outline' },
+      { title: 'BoardOfAdvisor', component: BoardOfAdvisor, icon: 'ios-people-outline' },
+      { title: 'Contact', component: Contact, icon: 'ios-call-outline' },      
+      // { title: 'OurAssociation', component: OurAssociation, icon: 'ios-podium-outline' }
+     
     ];
 
     this.dashboard = [

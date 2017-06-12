@@ -7,7 +7,6 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'schoolAndClients.html',
   styles: [`
     .schoolClient {
-      text-align:center;
       font-size:15px;
       border-bottom: 1px solid lightgray;
       padding: 7px;
@@ -17,10 +16,13 @@ import { NavController } from 'ionic-angular';
     border-top:2px solid gray;
     border-bottom:2px solid gray;
   }
+  ion-slides{
+    min-height:150px;
+  }
   ion-slide{
       padding: 10px !important;
       color:white;
-      height:initial !important;
+      height:150px !important;
     }
     .swiper-pagination swiper-pagination-clickable swiper-pagination-bullets{
       bottom:0px !important;
@@ -36,6 +38,9 @@ import { NavController } from 'ionic-angular';
     }
     .slide4{
       background:#0f6daa;
+    }
+    a{
+      color:white;
     }
   `]
 })

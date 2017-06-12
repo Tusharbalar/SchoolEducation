@@ -2,26 +2,28 @@
   <nl-navbar [title]="title"></nl-navbar>
 </ion-header>
 <ion-content class="csGrayBackground">
-  <div padding>
+  <div padding style="background:white">
+    <img src="http://www.mobilebeat.com/wp-content/uploads/2017/02/6360482837900300351044625281_intern.jpg" />
     <p>{{interns.data}}
     <br/> <br/> {{interns.data2}}
     </p>
   </div>
-  <ion-card>
 
-    <ion-card-content>
-          <b>
+  <ion-card>
+    <ion-card-header class='ion-card-header1'>
       Qualities / prerequisites for an Adult Volunteer/ Intern
-    </b>
+    </ion-card-header>
+    <ion-card-content>
       <ion-list>
-        <ion-item text-nowrap *ngFor="let a of list">
-          {{a}}
+        <ion-item *ngFor="let a of list">
+          <span>{{a}}</span>
         </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
+
   <ion-card>
-    <ion-card-header text-wrap>
+    <ion-card-header class='ion-card-header2'>
       Interns management policy
     </ion-card-header>
     <ion-card-content>

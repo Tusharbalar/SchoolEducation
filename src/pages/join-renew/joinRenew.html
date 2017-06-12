@@ -3,7 +3,7 @@
 </ion-header>
 <ion-content class="csGrayBackground">
   <ion-card>
-    <ion-card-header>
+    <ion-card-header class="ion-card-header1">
       Learning Forward India
     </ion-card-header>
     <ion-card-content>
@@ -14,7 +14,7 @@
     </ion-card-content>
   </ion-card>
   <div *ngIf="page1">
-    <ion-card>
+    <ion-card class="csCardTopBorder3">
       <ion-list>
         <ion-item>
           <ion-label stacked>Firstname <span color="danger">*</span></ion-label>
@@ -92,7 +92,7 @@
     </div>
   </div>
   <div *ngIf="page2">
-    <ion-card>
+    <ion-card class="csCardTopBorder5">
       <ion-list>
         <ion-list-header>
           You are paying for
@@ -134,7 +134,7 @@
     </div>
   </div>
   <div *ngIf="page3">
-    <ion-card>
+    <ion-card class="csCardTopBorder4">
       <ion-list radio-group [(ngModel)]="relationship">
         <ion-list-header>
           Select Paying Method

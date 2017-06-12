@@ -32,27 +32,17 @@ $colors: (
   cool:           #607D8B,
   fab:            #3e9e3e,
   header:         #519ee2,
-  color1:         #00bcd4,
-  colorLight:     #80deea,
-  transparent:    rgba(0, 0, 0, 0),
-  csStripColor:   #797d80,
-  yellow:       #FFEB3B
+  transparent: rgba(0, 0, 0, 0)
 );
 
 $color0 :             #7c7c7c;
 $color1:              #519ee2;
-$colorLight:          #00acc1;
-$dim:                 #dddddd;
-$csGray:              #dddddd;
-$csDark:              #000;
+$color2:              #1cada4;
+$color3:              #8dc047;
+$color4:              #106baa;
+$color5:              #dd3f8b;
 $csBackgroundColor:   #f5f5f5;
-$csStripColor:        #f8f8f8;
-$csDarkStrip:         #dedede;
-$csDarkPink:          #d35a7b;
-$csPink:              #f6c2d8;
-$csTransparentWhite:  rgba(255, 255, 255, 0.66);
-$csCard:              #ffffff;
-
+$csTransparentWhite:  rgba(255, 255, 255, 0.47);
 $csInputIconSize: 25px;
 $csTop:           5px;
 $toolbar-ios-height: 56px;

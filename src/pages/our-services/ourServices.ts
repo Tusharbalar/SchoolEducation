@@ -14,9 +14,9 @@ import { NavController, Slides } from 'ionic-angular';
     position: absolute;
   }
   ion-slide{
+      min-height: 150px !important;
       padding: 10px !important;
       color:white;
-      height:initial !important;
     }
     .swiper-pagination swiper-pagination-clickable swiper-pagination-bullets{
       bottom:0px !important;
@@ -52,6 +52,7 @@ export class OurServices implements OnInit {
     this.ourService = service.data;
     this.heading = service.heading;
     this.list = service.list;
+    console.log(this.list)
   }
 
 }
